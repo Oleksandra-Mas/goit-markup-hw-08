@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: var(--main-font-family);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  background-color: var(--main-white-color);
+  color: var(--primary-text-color);
+  @media screen and (min-width: 320px) {
+    overflow-x: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+%list {
+  list-style: none;
+  padding: 0;
+}
+@mixin font($fs, $fh) {
+  font-size: $fs;
+  line-height: $fh;
+}

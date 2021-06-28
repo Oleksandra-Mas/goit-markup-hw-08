@@ -1,0 +1,48 @@
+.join-us__title {
+  text-transform: uppercase;
+  @include font(14px, 1.143);
+  color: var(--main-white-color);
+
+  margin-bottom: 20px;
+}
+.join-us {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.subscribe {
+  @extend .join-us;
+  margin-left: 93px;
+}
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--subscribe-border-color);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px var(--subscribe-shadow-color);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--main-white-color);
+
+  padding: 15px 16px;
+
+  &::placeholder {
+    @include font(16px, 1.25);
+    color: var(--subscribe-input-text-color);
+  }
+}
+.subscribe__title {
+  @extend .join-us__title;
+}
+.subscribe__form {
+  display: flex;
+}
+.subscribe__btn {
+  display: flex;
+  align-items: center;
+
+  margin-left: 12px;
+  padding: 10px 28px 10px 29px;
+}
+.button__append {
+  margin-left: 10px;
+}
