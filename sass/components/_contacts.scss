@@ -6,7 +6,13 @@
 }
 .contact-nav-vertical {
   flex-flow: column;
-  align-items: flex-start;
+
+  @media screen and (min-width: 320px) {
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 .contact-nav__item {
   & + & {
@@ -51,13 +57,20 @@
 .contact-nav__link--light {
   color: var(--light-address-color);
   font-style: normal;
+  @include font(14px, 1.71);
+  letter-spacing: 0.03em;
 }
 .office-address {
   font-weight: 400;
-  @include font(14px, 1.7);
+  @include font(14px, 1.71);
   color: var(--main-white-color);
   font-style: normal;
 
   display: block;
-  margin-bottom: 9px;
+  @media screen and (min-width: 320px) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
