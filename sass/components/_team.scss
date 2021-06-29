@@ -1,16 +1,31 @@
 .team-list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-left: calc(-1 * var(--card-margin));
-  margin-top: calc(-1 * var(--card-margin));
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-margin));
+    margin-top: calc(-1 * var(--card-margin));
+  }
 }
 .team-list__item {
-  flex-basis: calc((100% - 4 * var(--card-margin)) / 4);
-  margin-left: var(--card-margin);
-  margin-top: var(--card-margin);
-
+  &:not(:last-child) {
+    @media screen and (min-width: 320px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * var(--card-margin)) / 2);
+    margin-left: var(--card-margin);
+    margin-top: var(--card-margin);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * var(--card-margin)) / 4);
+    margin-left: var(--card-margin);
+    margin-top: var(--card-margin);
+  }
   background-color: var(--main-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -32,7 +47,30 @@
 }
 
 .team-member-card {
-  padding-top: var(--card-padding-index);
+  @media screen and (min-width: 320px) {
+    padding-top: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--card-padding-index);
+  }
   padding-bottom: var(--card-padding-index);
   text-align: center;
+}
+.team-list__photo {
+  @media screen and (min-width: 320px) {
+    width: 290px;
+    height: 280px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 460px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
 }
