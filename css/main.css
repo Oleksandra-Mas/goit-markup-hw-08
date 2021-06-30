@@ -69,6 +69,12 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -191,7 +197,7 @@ p {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header-container {
     justify-content: space-between;
   }
@@ -267,7 +273,7 @@ p {
   display: flex;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header .nav-list {
     display: none;
   }
@@ -335,7 +341,7 @@ p {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header .contact-nav {
     display: none;
   }
@@ -709,10 +715,40 @@ p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 50, 77, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
+  background-image: linear-gradient(rgba(47, 50, 77, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 50, 77, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 50, 77, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 50, 77, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 50, 77, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-laptop.jpg");
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(rgba(47, 50, 77, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-laptop@2x.jpg");
+  }
 }
 
 @media screen and (min-width: 320px) {

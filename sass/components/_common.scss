@@ -37,3 +37,8 @@ p {
   font-size: $fs;
   line-height: $fh;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
