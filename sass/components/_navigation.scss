@@ -7,6 +7,11 @@
 .nav-list {
   display: flex;
   @extend %list;
+  .header & {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
 }
 .nav-list__link {
   font-weight: 500;
@@ -16,8 +21,10 @@
   color: var(--title-text-color);
 
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   transition-property: color;
   transition-duration: 250ms;
@@ -50,10 +57,5 @@
 .nav-list__item {
   &:not(:last-child) {
     margin-right: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .nav-list {
-    display: none;
   }
 }

@@ -27,20 +27,27 @@
           <a href="./index.html" class="logo">
             Web<span class="logo__studio-part">Studio</span>
           </a>
-          <ul class="list nav-list">
+          <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Студия</a>
+              <a href="./index.html" class="nav-list__link current">Студия</a>
             </li>
             <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
             </li>
             <li class="nav-list__item">
               <a href="" class="nav-list__link">Контакты</a>
             </li>
           </ul>
         </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="40px" height="40px">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <ul class="contact-nav">
           <li class="contact-nav__item">
             <a class="contact-nav__link" href="mailto:info@devstudio.com">
@@ -298,14 +305,14 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-second-container">
+        <div class="footer-additional-container">
           <div class="footer__address">
             <a href="./index.html" class="logo logo--light">
               Web<span class="logo__studio-part--light">Studio</span>
             </a>
             <address>
               <p class="office-address">г. Киев, пр-т Леси Украинки, 26</p>
-              <ul class="contact-nav contact-nav-vertical list">
+              <ul class="contact-nav contact-nav-vertical">
                 <li class="contact-nav__item contact-nav__item--vertical">
                   <a
                     class="contact-nav__link contact-nav__link--light"
@@ -381,5 +388,64 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-icon" width="40px" height="40px">
+          <use href="./images/sprite.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="./index.html" class="nav-list__link">Студия</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="" class="nav-list__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="contact-nav">
+        <li class="contact-nav__item">
+          <a
+            class="contact-nav__link contact-nav__link--blue"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="contact-nav__item">
+          <a
+            class="contact-nav__link contact-nav__link--big"
+            href="tel:+380961111111"
+          >
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+      <ul class="social-site-list">
+        <li class="social-site-list__item">
+          <a href="" class="social-site-list__link">Instagram</a>
+        </li>
+        <li class="social-site-list__item">
+          <a href="" class="social-site-list__link">Twitter</a>
+        </li>
+        <li class="social-site-list__item">
+          <a href="" class="social-site-list__link">Facebook</a>
+        </li>
+        <li class="social-site-list__item">
+          <a href="" class="social-site-list__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
