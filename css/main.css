@@ -1188,13 +1188,32 @@ p {
   top: 50%;
   left: 50%;
   padding: 40px;
-  min-height: 581px;
-  min-width: 528px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: var(--button-radius);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 320px) {
+  .modal {
+    min-height: 609px;
+    min-width: 290px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    min-height: 609px;
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-height: 581px;
+    min-width: 528px;
+  }
 }
 
 .btn-close {
@@ -1223,11 +1242,23 @@ p {
 }
 
 .modal__title {
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .btn-submit-form {
@@ -1270,11 +1301,11 @@ p {
 .form__label {
   display: block;
   font-size: 12px;
-  line-height: 1.667;
+  line-height: 1.167;
   letter-spacing: 0.01em;
 }
 
-.form__label + .form__label {
+.form__label + .input-box {
   margin-top: 4px;
 }
 
