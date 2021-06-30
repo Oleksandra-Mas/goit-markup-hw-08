@@ -1,5 +1,8 @@
 .site-nav {
   display: flex;
+  @media screen and (max-width: 767px) {
+    margin-right: 93px;
+  }
 }
 .nav-list {
   display: flex;
@@ -47,5 +50,10 @@
 .nav-list__item {
   &:not(:last-child) {
     margin-right: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-list {
+    display: none;
   }
 }

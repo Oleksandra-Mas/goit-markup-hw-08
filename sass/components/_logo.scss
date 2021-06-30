@@ -13,7 +13,9 @@
   display: block;
   padding-bottom: 25px;
   padding-top: 24px;
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 .logo__studio-part {
   color: var(--logo-primary-color);
