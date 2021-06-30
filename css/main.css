@@ -960,6 +960,10 @@ img {
   }
 }
 
+.works-section {
+  padding-top: 0;
+}
+
 @media screen and (max-width: 1199px) and (max-width: 1200px) {
   .works-section {
     display: none;
