@@ -1537,6 +1537,10 @@ img {
   background-color: var(--main-white-color);
   z-index: 999;
   overflow-y: scroll;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -1558,18 +1562,6 @@ img {
 
 .menu-container .contact-nav {
   flex-flow: column;
-}
-
-@media screen and (min-width: 320px) {
-  .menu-container .contact-nav {
-    margin-top: 100px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .menu-container .contact-nav {
-    margin-top: 302px;
-  }
 }
 
 .menu-container .nav-list__item {

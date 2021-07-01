@@ -8,6 +8,7 @@
   background-color: var(--main-white-color);
   z-index: 999;
   overflow-y: scroll;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -29,7 +30,11 @@
   & .nav-list {
     flex-flow: column;
   }
+  .contact-nav {
+    flex-flow: column;
+  }
 }
+
 .nav-list__item {
   .menu-container & {
     font-weight: 500;
