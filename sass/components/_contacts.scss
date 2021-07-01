@@ -110,6 +110,7 @@
 .contact-nav__link--light {
   color: var(--light-address-color);
   font-style: normal;
+  font-weight: 400;
   @include font(14px, 1.71);
   letter-spacing: 0.03em;
 }

@@ -466,6 +466,7 @@ img {
 .contact-nav__link--light {
   color: var(--light-address-color);
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -755,7 +756,6 @@ img {
   .hero-section {
     padding-top: 100px;
     padding-bottom: 100px;
-    max-width: 320px;
     height: 400px;
   }
 }
@@ -764,14 +764,13 @@ img {
   .hero-section {
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 480px;
     height: 400px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    max-width: 768px;
+    height: 400px;
   }
 }
 
@@ -1491,6 +1490,13 @@ img {
 
 .policy-checkbox__text {
   display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+  .policy-checkbox__text {
+    font-size: 12px;
+    line-height: 1.167;
+  }
 }
 
 .policy-checkbox {
