@@ -4,7 +4,7 @@
     "sources": [
         "../sass/main.scss",
         "../sass/utils/_variables.scss",
-        "../sass/components/_common.scss",
+        "../sass/base/_common.scss",
         "../sass/components/_container.scss",
         "../sass/components/_section.scss",
         "../sass/components/_socials.scss",
