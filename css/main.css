@@ -75,6 +75,19 @@ img {
   height: auto;
 }
 
+.advantages-section__title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -837,10 +850,6 @@ img {
 
 .advantage__text {
   line-height: 1.71;
-}
-
-.advantages-section__title {
-  display: none;
 }
 
 .advantage__icon {
