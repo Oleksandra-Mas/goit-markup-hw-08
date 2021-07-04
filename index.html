@@ -42,6 +42,7 @@
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
+          aria-label="open menu"
         >
           <svg class="menu-icon" width="40px" height="40px">
             <use href="./images/sprite.svg#icon-menu"></use>
@@ -86,6 +87,7 @@
             data-modal-open
             type="button"
             class="button hero-section__btn"
+            aria-label="open modal"
           >
             Заказать услугу
           </button>
@@ -594,7 +596,11 @@
                 />
               </div>
             </label>
-            <button type="submit" class="button subscribe__btn">
+            <button
+              type="submit"
+              class="button subscribe__btn"
+              aria-label="subscribe"
+            >
               Подписаться
               <svg class="button__append" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
@@ -606,7 +612,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="btn-close" data-modal-close>
+        <button class="btn-close" data-modal-close aria-label="close modal">
           <svg class="btn-close__icon" width="30px" height="30px">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
@@ -695,7 +701,11 @@
               >
             </p>
           </label>
-          <button type="submit" class="button btn-submit-form">
+          <button
+            type="submit"
+            class="button btn-submit-form"
+            aria-label="submit form"
+          >
             Отправить
           </button>
         </form>
@@ -703,7 +713,7 @@
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="menu-container__nav">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-toggle js-close-menu" aria-label="toggle menu">
           <svg class="menu-icon" width="40px" height="40px">
             <use href="./images/sprite.svg#icon-menu-close"></use>
           </svg>

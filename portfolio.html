@@ -42,6 +42,7 @@
           </ul>
         </nav>
         <button
+          aria-label="open menu"
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -560,7 +561,11 @@
                 />
               </div>
             </label>
-            <button type="submit" class="button subscribe__btn">
+            <button
+              type="submit"
+              class="button subscribe__btn"
+              aria-label="subscribe"
+            >
               Подписаться
               <svg class="button__append" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
@@ -572,7 +577,7 @@
     </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="menu-container__nav">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-toggle js-close-menu" aria-label="close menu">
           <svg class="menu-icon" width="40px" height="40px">
             <use href="./images/sprite.svg#icon-menu-close"></use>
           </svg>
